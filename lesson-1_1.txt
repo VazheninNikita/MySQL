@@ -1,0 +1,27 @@
+(base) admin@admins-MacBook-Pro ~ % ls -la ~ | grep .my.cnf
+-rw-r--r--    1 admin  staff     36 May 31 14:56 .my.cnf
+(base) admin@admins-MacBook-Pro ~ % cat ~/.my.cnf          
+[mysql]
+user=root
+password=freestyle%                                                             (base) admin@admins-MacBook-Pro ~ % mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 24
+Server version: 8.0.25 Homebrew
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+Bye
+(base) admin@admins-MacBook-Pro ~ % chmod 0600 ~/.my.cnf
+(base) admin@admins-MacBook-Pro ~ % ls -la ~ | grep .my.cnf
+-rw-------    1 admin  staff     36 May 31 14:56 .my.cnf
+(base) admin@admins-MacBook-Pro ~ % cat ~/.my.cnf          
+[mysql]
+user=root
+password=freestyle%                                                             (base) admin@admins-MacBook-Pro ~ % 
